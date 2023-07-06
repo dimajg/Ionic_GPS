@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      GEOLOCALIZACION
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  //dentro del ion-content se crea la vista
+  //se define el titulo y que este en el centro 
+  <div class="ion-padding" styles="text-align: center;">
+    <ion-label>COORDENADAS</ion-label>
+  </div>
+ // se crea las variables 
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label>LATITUD: {{latitud}}</ion-label>
+    </ion-item>
+  </div>
+
+  <div class="ion-padding">
+    <ion-item>
+      <ion-label>LONGITUD: {{longitud}}</ion-label>
+    </ion-item>
+  </div>
+
+//se crea el boton 
+  <div class="ion-padding">
+    <ion-button expand="full" (click)=obtenerCoordenadas()>CAPTURAR</ion-button>
+  </div>
+
+</ion-content>
